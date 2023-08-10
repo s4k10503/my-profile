@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.css';
+import SphereComponent from './SphereComponent.js';
 
 function App() {
+  console.log('App Component Rendered');
   const profile = {
     name: 'OyO',
     bio: 'I am interested in AI, XR.',
@@ -18,6 +20,7 @@ function App() {
           <a href={profile.github} target="_blank" rel="noreferrer">GitHub</a>
           <a href={profile.zenn} target="_blank" rel="noreferrer">Zenn</a>
         </div>
+        <SphereComponent />{}
       </header>
     </div>
   );
